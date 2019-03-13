@@ -1,0 +1,30 @@
+body {
+    background: #0e1013;
+}
+
+h1 {
+    max-width: 480px;
+    text-align: center;
+    margin: 60px auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+}
+
+h1::after{
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca{
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
